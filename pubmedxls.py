@@ -33,7 +33,6 @@ for compound in lines:
     ws.write(row, 0, compound)
     #For some reason you can't directly get the ID, so we get the record and take ID from there
     recordUrl = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/"+compound+"/record/json"
-    print(recordUrl)
 
     for property in properties:
         url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/"+compound+"/property/"+property+"/txt"
