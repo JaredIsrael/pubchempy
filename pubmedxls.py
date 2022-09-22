@@ -1,8 +1,6 @@
-import re
 import xlsxwriter
 import requests
 import sys
-import json
 
 #pubchem id, IUPAC name, molecular weight, chemical formula, LC or GC spectra
 properties = ["IUPACName", "MolecularWeight", "MolecularFormula"]
